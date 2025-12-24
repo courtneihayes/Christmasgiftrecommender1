@@ -1,4 +1,3 @@
-{
   "name": "gift-recommender",
   "version": "1.0.0",
   "private": true,
@@ -12,4 +11,4 @@
     "react": "latest",
     "react-dom": "latest"
   }
-}
+
