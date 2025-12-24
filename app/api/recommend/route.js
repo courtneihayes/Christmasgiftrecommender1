@@ -94,11 +94,7 @@ function generateGiftRecommendations(age, gender, interests, budget) {
       reason: `Perfect match for ${ageNum} year old interested in ${interestList.join(' and ')}. Within budget at $${gift.price}.`
     }));
 
-  return selectedGifts.length > 0 ? selectedGifts : getDefaultGifts();
-}
-
-function getDefaultGifts() {
-  return [
+  return selectedGifts.length > 0 ? selectedGifts : [
     { name: 'Gift Card', price: 50, description: 'Flexible gift card', reason: 'Let them choose their favorite' },
     { name: 'Smart Watch', price: 100, description: 'Wearable fitness tracker', reason: 'Useful for any age' },
     { name: 'Wireless Earbuds', price: 80, description: 'Noise-canceling earbuds', reason: 'Always popular' },
